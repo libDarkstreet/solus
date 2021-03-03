@@ -3,8 +3,8 @@ sudo eopkg -y upgrade
 sudo eopkg -y install gcc discord python3 python3-devel curl wget eom git make
 sudo eopkg -y it -c system.devel
 
-#sudo mkdir /opt
-#sudo chown kriss:kriss /opt
+sudo mkdir /opt
+sudo chown kriss:kriss /opt
 
 wget -O /opt/ipmitool.zip https://github.com/ipmitool/ipmitool/archive/master.zip
 cd /opt/
