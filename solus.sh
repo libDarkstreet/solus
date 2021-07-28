@@ -22,5 +22,6 @@ cd /opt/pyipmi-main
 mv ipmi.py pyipmi
 chmod +x pyipmi
 ln -s /opt/pyipmi-main/pyipmi /usr/bin
+sudo rm /opt/pyipmi.zip
 pip3 install bcrypt
 cd
