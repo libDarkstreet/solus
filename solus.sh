@@ -4,8 +4,10 @@ sudo eopkg -y install gcc discord python3 python3-devel curl wget eom git make s
 sudo eopkg -y it -c system.devel
 sudo eopkg install libelf-devel linux-current-headers linux-headers
 
+username=$(whoami)
+
 sudo mkdir /opt
-sudo chown kriss:kriss /opt
+sudo chown $username:$username /opt
 
 wget -O /opt/ipmitool.zip https://github.com/ipmitool/ipmitool/archive/master.zip
 cd /opt/
@@ -23,6 +25,6 @@ mv ipmi.py pyipmi
 chmod +x pyipmi
 ln -s /opt/pyipmi-main/pyipmi /usr/bin
 sudo rm /opt/pyipmi.zip
-sudo chown kriss:kriss -R /opt/pyipmi-main
+sudo chown $username:$username -R /opt/pyipmi-main
 pip3 install bcrypt
 cd
