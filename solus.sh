@@ -28,3 +28,6 @@ sudo rm /opt/pyipmi.zip
 sudo chown $username:$username -R /opt/pyipmi-main
 pip3 install bcrypt
 cd
+
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.vscodium.codium
