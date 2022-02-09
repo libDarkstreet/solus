@@ -18,7 +18,7 @@ ln -s /usr/local/bin/ipmitool /usr/bin
 rm /opt/ipmitool.zip
 
 cd /opt/
-wget -O /opt/pyipmi.zip https://github.com/Darkstreet00/pyipmi/archive/main.zip
+wget -O /opt/pyipmi.zip https://github.com/libDarkstreet/pyipmi/archive/main.zip
 unzip pyipmi.zip
 cd /opt/pyipmi-main
 mv ipmi.py pyipmi
