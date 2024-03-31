@@ -8,6 +8,6 @@ sudo eopkg install docker
 sudo systemctl enable docker.service --now
 sudo usermod -aG docker $USER
 
-
-
 sudo eopkg remove gnome-calculator gnome-calendar rhythmbox thunderbird celluloid evince onboard
+
+sudo gsettings set org.nemo.preferences click-policy double
